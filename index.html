@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/stylesheets/index.css">
+    <!-- LOGOS E ICONOS -->
+    <script src="https://kit.fontawesome.com/cb6ac5c478.js" crossorigin="anonymous"></script>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <!-- LIBRERIA DATA AOS (para animaciones)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Devfolio</title>
+</head>
+<body>
+    <header id="header">
+        <img src="./src/static/logo blanco.png" alt="Logo de la pagina">
+        
+        <button id="button" class="menu__button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="menu" class="menu">
+            <li class="menu__item"><a href="#header">Hola!</a></li>
+            <li class="menu__item"><a href="#sobreMi">Sobre mi</a></li>
+            <li class="menu__item"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+    
+    <main class="main__container">
+        <button data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1000" class="arriba"><a href=#header><i class="fa-solid fa-arrow-up"></i></a></button>
+
+        <section id="hola" class="presentacion">
+            <article data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000">                
+                <img 
+                    data-aos="fade-down" 
+                    data-aos-delay="500" 
+                    data-aos-duration="1000"
+                    data-aos-easing="linear" 
+                    class="avatar-img" 
+                    src="./src/static/avatar.png" 
+                    alt="avatar">
+                <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Hola! Soy Juan Martin. <br><br> Full Stack Developer </h1>
+            </article>
+        </section>
+
+        <section id="sobreMi" class="sobreMi">
+            <article>
+                <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Sobre mi</h2>
+
+                <div class="contenedor-sobreMi" aria-label="">
+                    <img 
+                        data-aos="fade-in" 
+                        data-aos-delay="1000" 
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        class="pc-img"
+                        src="./src/static/pc.png" 
+                        alt="laptop">
+                    <h4 data-aos="fade-in"
+                    data-aos-delay="1000"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">Comencé en el mundo de la programación por curiosidad. Realicé varios proyectos y actualmente tengo un año de experiencia trabajando con diferentes tecnologías.</h4>
+                </div>
+                <div class="contenedor-tecnologias">
+                    
+                </div>
+                  
+            </article>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <article>
+                <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Contacto</h2>
+
+                <a href="">linkedin</a>
+                <a href="">github</a>
+                
+            </article>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
