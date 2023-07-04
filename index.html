@@ -25,15 +25,15 @@
 
         <ul id="menu" class="menu">
             <li class="menu__item"><a href="#header">Hola!</a></li>
-            <li class="menu__item"><a href="#sobreMi">Sobre mi</a></li>
-            <li class="menu__item"><a href="#contacto">Contacto</a></li>
+            <li class="menu__item"><a href="#about">Sobre mi</a></li>
+            <li class="menu__item"><a href="#contact">Contacto</a></li>
         </ul>
     </header>
     
     <main class="main__container">
-        <button data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1000" class="arriba"><a href=#header><i class="fa-solid fa-arrow-up"></i></a></button>
+        <button data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1000" class="go-up-button"><a href=#header><i class="fa-solid fa-arrow-up"></i></a></button>
 
-        <section id="hola" class="presentacion">
+        <section id="hola" class="intro__section">
             <article data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000">                
                 <img 
                     data-aos="fade-down" 
@@ -43,44 +43,76 @@
                     class="avatar-img" 
                     src="./src/static/avatar.png" 
                     alt="avatar">
-                <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Hola! Soy Juan Martin. <br><br> Full Stack Developer </h1>
+                <h1 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Hola! Soy Juan Martin.</h1>
+                <h3 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800">Desarrollador Full Stack.</h3>
             </article>
         </section>
 
-        <section id="sobreMi" class="sobreMi">
-            <article>
+        <section id="about" class="about__section">
+            <article data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000">
                 <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Sobre mi</h2>
-
-                <div class="contenedor-sobreMi">
-                    <img 
-                        data-aos="fade-in" 
-                        data-aos-delay="1000" 
+                <div class="about__section-slider">
+                    <div class="about__section-card">
+                        <img 
+                            data-aos="fade-in" 
+                            data-aos-delay="800" 
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            class="laptop-img"
+                            src="./src/static/pc.png" 
+                            alt="laptop">
+                        <h4 data-aos="fade-in"
+                        data-aos-delay="800"
                         data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        class="pc-img"
-                        src="./src/static/pc.png" 
-                        alt="laptop">
-                    <h4 data-aos="fade-in"
-                    data-aos-delay="1000"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">Comencé en el mundo de la programación por curiosidad. Realicé varios proyectos y actualmente tengo un año de experiencia trabajando con diferentes tecnologías.</h4>
+                        data-aos-easing="ease-in-out">Comencé en el mundo de la programación por curiosidad. Realicé varios proyectos y actualmente tengo un año de experiencia trabajando con diferentes tecnologías.</h4>
+                    </div>
+
+                    <div class="about__section-card">
+                        <img 
+                            data-aos="fade-in" 
+                            data-aos-delay="800" 
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            class="laptop-img"
+                            src="./src/static/pc.png" 
+                            alt="laptop">
+                        <h4 data-aos="fade-in"
+                        data-aos-delay="800"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Comencé en el mundo de la programación por curiosidad. Realicé varios proyectos y actualmente tengo un año de experiencia trabajando con diferentes tecnologías.</h4>
+                    </div>
+
+                    <div class="about__section-card">
+                        <img 
+                            data-aos="fade-in" 
+                            data-aos-delay="800" 
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            class="laptop-img"
+                            src="./src/static/pc.png" 
+                            alt="laptop">
+                        <h4 data-aos="fade-in"
+                        data-aos-delay="800"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Comencé en el mundo de la programación por curiosidad. Realicé varios proyectos y actualmente tengo un año de experiencia trabajando con diferentes tecnologías.</h4>
+                    </div>
                 </div>
                 
         
             </article>
         </section>
 
-        <section id="contacto" class="contacto">
+        <section id="contact" class="contact">
             <article>
                 <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Contacto</h2>
 
-                <div class="contacto-medios">
+                <div class="contact__links">
                     <a href="https://linkedin.com/in/juan-martín-pérez-caraballo-891728235/" target="_blank" data-aos="fade-down"
-                    data-aos-delay="1000"
+                    data-aos-delay="800"
                     data-aos-duration="600"
                     data-aos-easing="ease-in-out"><img src="./src/static/linkedin-logo.png" alt="logo de LinkedIn"><h4>LinkedIn</h4></a>
                     <a href="https://github.com/JuanMartinPC" target="_blank" data-aos="fade-down"
-                    data-aos-delay="1200"
+                    data-aos-delay="1000"
                     data-aos-duration="500"
                     data-aos-easing="ease-in-out"><img src="./src/static/github-logo.png" alt="logo de GitHub"><h4>GitHub</h4></a>
                 </div>

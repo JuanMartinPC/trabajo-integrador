@@ -17,10 +17,18 @@
     font-family: 'Nova Square', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 425px){
 
     body{
         background-color: var(--color-body);
+    }
+  
+    h2{
+        font-size: 1.2em;
     }
 
     header{
@@ -31,7 +39,7 @@
         z-index: 10;
         /* DIMENSIONES */
         width: 100%;
-        height: 15vh;
+        height: 15%;
         /* ESTILO */
         background: linear-gradient(145deg, var(--color-primario), var(--color-secundario));
         box-shadow:  0px 2px 20px 6px var(--color-terciario)
@@ -92,8 +100,6 @@
         list-style: none;
     }
 
-    
-
     .menu__item a{
         text-decoration: none;
         color: white;
@@ -112,12 +118,13 @@
         top: 0;
         z-index: 1;
         /* DIMENSIONES */
-        width: 100%;
-        
+        width: 100%;        
     }
 
     section{
         padding: 20px 0;
+        margin: 5vh 0;
+        height: 100vh;
     }
 
     article{
@@ -129,11 +136,12 @@
         align-items: center;
         text-align: center;
         top: 0vh;
+        /* DIMENSIONES */
     }
 
    
 
-    .presentacion article{
+    .intro__section article{
         /* DIMENSIONES */
         /* ESTILO */
         background: linear-gradient(145deg, var(--color-body), var(--color-primario));
@@ -143,24 +151,23 @@
         padding: 5vh 0;
     }
 
-    .presentacion h3{
+    .intro__section article h1{
         /* DIMENSIONES */
-        width: 100%;
-        height: max-content;
+        font-size: 1.5em;
     }
 
     .avatar-img{
         /* COMPORTAMIENTO */
         z-index: 2;
         /* DIMENSIONES */
-        width: 225px;
-        height: 225px;
+        width: 75%;
+        height: 75%;
         /* ESTILO */
         box-shadow: var(--sombra-2);
         border-radius: 100%;
     }
 
-    .arriba{
+    .go-up-button{
         /* COMPORTAMIENTO */
         display: flex;
         justify-content: center;
@@ -179,44 +186,60 @@
         box-shadow: var(--sombra-2);
     }
 
-    .arriba a{
+    .go-up-button a{
         color: black;
 
         &:active{
             color: azure;
         }
     }
-    
-    .contenedor-sobreMi{
-        /* COMPOrTAMIENTO */
+
+    .about__section{
+        padding: 8vh 0;
+    }
+
+    .about__section-slider{
+        /* COMPORTAMIENTO */
+        display: flex;        
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        /* DIMENSIONES */
+        width: 100vw;
+        height: max-content;
+    }
+
+    .about__section-card{
+        /* COMPORTAMIENTO */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 5vh;
-        padding: 5vh 0;
+        margin: 5vw 5vh;
+        scroll-snap-align: center;
+        /* DIMENSIONES */
+        min-width: 75%;
         /* ESTILOS */
         background: linear-gradient(145deg, var(--color-body), var(--color-primario));
         box-shadow: var(--sombra-1);
         border-radius: 15px;
     }
 
-    .pc-img{
+    .laptop-img{
         /* COMPORTAMIENTO */        
         position: relative;
         /* DIMENSIONES */
-        width: 180px;
-        height: 180px;
+        width: 90%;
+        height: 90%;
         /* ESTILOS */
         box-shadow: var(--sombra-2);
         border-radius: 100%;
     }
 
-    .sobreMi h2{
+    .about__section h2{
         padding-top: 10%;
     }
 
-    .sobreMi h4{
+    .about__section h4{
         text-align: center;
         padding: 20px 0;
     }
@@ -225,20 +248,21 @@
 
     /* 111111111111111111 */
 
-    .contacto article{
+    .contact article{
         height: 100%;
         padding: 5vh 0;
     }
 
-    .contacto-medios{
+    .contact__links{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         width: 95%;
         height: 100%;
     }
 
-    .contacto-medios a{
+    .contact__links a{
         width: 30vw;
         padding: 10px;
         box-shadow: var(--sombra-1), var(--sombra-2);
@@ -247,7 +271,7 @@
         color: black;
     }
 
-    .contacto-medios a img{
+    .contact__links a img{
         width: 100%;
         height: 100%; 
     }
