@@ -110,7 +110,7 @@ html{
         /* COMPORTAMIENTO */
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: .2fr 1fr .5fr;
+        grid-template-rows: .2fr 1fr 1fr .5fr;
         position: relative;
         top: 0;
         z-index: 1;
@@ -220,6 +220,7 @@ html{
         justify-content: center;
         align-items: center;
         margin: 5vw 5vh;
+        padding-left: 5vw;
         scroll-snap-align: center;
         /* DIMENSIONES */
         min-width: 75%;
