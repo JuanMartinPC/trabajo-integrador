@@ -110,7 +110,7 @@ html{
         /* COMPORTAMIENTO */
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: .2fr 1fr 1fr .5fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr;
         position: relative;
         top: 0;
         z-index: 1;
@@ -217,10 +217,10 @@ html{
         /* COMPORTAMIENTO */
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin: 5vw 5vh;
-        padding-left: 5vw;
+        padding: 5vw;
         scroll-snap-align: center;
         /* DIMENSIONES */
         min-width: 75%;
@@ -230,15 +230,20 @@ html{
         border-radius: 15px;
     }
 
-    .laptop-img{
+    .card__image-container{
+        width: 80%;
+        height: 80%;
+    }
+
+    .card-img{
         /* COMPORTAMIENTO */        
         position: relative;
         /* DIMENSIONES */
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 300px;
         /* ESTILOS */
         box-shadow: var(--sombra-2);
-        border-radius: 100%;
+        border-radius: 15px;
     }
 
     .about__section h2{
@@ -253,6 +258,10 @@ html{
     /* 111111111111111111 */
 
     /* 111111111111111111 */
+
+    .contact__section{
+        height: 75vh;
+    }
 
     .contact article{
         height: 100%;
