@@ -17,21 +17,27 @@
 </head>
 <body>
     <header id="header">
-        <img src="./src/static/logo blanco.png" alt="Logo de la pagina">
-        
-        <button id="button" class="menu__button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <img class="page__logo" src="./src/static/logo blanco.png" alt="Logo de la pagina">
+        <div class="menu__container">                        
+            <button id="button" class="menu__button" aria-label="boton para desplegar el menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <ul id="menu" class="menu">
-            <li class="menu__item"><a href="#header">Hola!</a></li>
-            <li class="menu__item"><a href="#about">Sobre mi</a></li>
-            <li class="menu__item"><a href="#projects">Proyectos</a></li>
-            <li class="menu__item"><a href="#contact">Contacto</a></li>
-        </ul>
+            <ul id="menu" class="menu">
+                <li class="menu__item"><a href="#main" class="to-top-desk">Hola!</a></li>
+                <li class="menu__item"><a href="#header" class="to-top-mobile">Hola!</a></li>            
+                <li class="menu__item"><a href="#about">Sobre mi</a></li>
+                <li class="menu__item"><a href="#projects">Proyectos</a></li>
+                <li class="menu__item"><a href="#contactLinks">Contacto</a></li>
+            </ul>
+        </div>
+        
     </header>
     
-    <main class="main__container">
+    <main  id="main" class="main__container">
+        <button id="hideMenu" class="hide__menu" aria-label="boton para esconder el menu">
+            <i class="fa-solid fa-eye-slash"></i>
+        </button>
         <button data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1000" class="go-up-button"><a href=#header><i class="fa-solid fa-arrow-up"></i></a></button>
 
         <section id="hola" class="intro__section">
@@ -208,12 +214,12 @@
             <article class="projects__grid">
                 <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Mis proyectos</h2>
                 <div class="project__grid-container">
-                    <div class="project__grid-img1"><h4>proyecto 1</h4></div>
-                    <div class="project__grid-img2"><h4>proyecto 2</h4></div>
-                    <div class="project__grid-img3"><h4>proyecto 3</h4></div>
-                    <div class="project__grid-img4"><h4>proyecto 4</h4></div>
-                    <div class="project__grid-img5"><h4>proyecto 5</h4></div>
-                    <div class="project__grid-img6"><h4>proyecto 6</h4></div>
+                    <div aria-label="imagen del proyecto blockchain" class="project__grid-img1"><h4>Blockchain prototipo básico con Python y Flask.</h4></div>
+                    <div aria-label="imagen del proyecto capicuas" class="project__grid-img2"><h4>Algoritmo para detección de capicuas.</h4></div>
+                    <div aria-label="imagen del proyecto de busquedas relacionadas" class="project__grid-img3"><h4>Algoritmo para obtención de busquedas relacionadas a una lista de palabras en internet.</h4></div>
+                    <div aria-label="imagen del proyecto contador de datos" class="project__grid-img4"><h4>Algoritmo para contabilizar la cantidad de datos contenidos en un archivo CSV.</h4></div>
+                    <div aria-label="imagen del proyecto codificador de texto" class="project__grid-img5"><h4>Desafío de codificador de texto</h4></div>
+                    <div aria-label="imagen del proyecto web scrapping synthesio" class="project__grid-img6"><h4>Algoritmo para web scrapping de redes sociales, manipulacion y obtencion los datos escenciales.</h4></div>
                 </div>
             </article>
         </section>
@@ -223,7 +229,7 @@
             <article>
                 <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Contacto</h2>
 
-                <div class="contact__links">
+                <div id="contactLinks" class="contact__links">
                     <a href="mailto:juanmartin42453@gmail.com?Subject=Contacto%20desde%20el%20portafolio" data-aos="fade-down"><img src="./src/static/correo.png" alt=""><h4>Correo</h4></a>
                     <a href="https://linkedin.com/in/juan-martín-pérez-caraballo-891728235/" target="_blank" data-aos="fade-down"
                     ><img src="./src/static/linkedin-logo.png" alt="logo de LinkedIn"><h4>LinkedIn</h4></a>
