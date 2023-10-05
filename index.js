@@ -24,3 +24,16 @@ function Hide(){
 }
 
 hideButton.addEventListener("click", Hide);
+
+
+/* const openImage = document.getElementById("project__grid-container")
+
+function openPopUp(){
+    const getImages = () => {
+        for (i in openImage){
+            console.log(openImage[i])
+        };
+    }
+
+    openImage.addEventListener('click', getImages);;
+} */
