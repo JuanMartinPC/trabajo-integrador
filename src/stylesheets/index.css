@@ -818,6 +818,22 @@ a, button, .project__grid-container div{
         border-radius: 100%;
     }
 
+    .dycv{
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .dycv > a{
+        color: black;
+        text-decoration-line: none;
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(145deg, var(--color-body), var(--color-primario));
+        box-shadow: var(--sombra-2);
+    }
+
     .go-up-button{
         /* COMPORTAMIENTO */
         display: none;
@@ -904,6 +920,12 @@ a, button, .project__grid-container div{
     }
     /*|||||||||||||||||||||| projects ||||||||||||||||||||||*/
 
+    .projects{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .projects__article{
         display: none;
     }
@@ -913,24 +935,37 @@ a, button, .project__grid-container div{
         min-height: min-content;
         text-align: center;
         position: relative;
-        top: -8%;
+        
     }
 
     .projects__grid h2{
         font-size: 2em;
         position: relative;
-        top: 100px;
+
     }
 
     .project__grid-container{
+        box-sizing: border-box;
         transform: scale(.7);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        /* column-gap: 20%;*/
-        
+        background: linear-gradient(145deg, var(--color-body), var(--color-primario));
+        box-shadow: var(--sombra-2);
+        padding: 50px;
+        border-radius: 50px;
         width: 100%;
-        height: 100%;
+    }
+
+    .project__grid-container-web{
+        box-sizing: border-box;
+        transform: scale(.7);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        background: linear-gradient(145deg, var(--color-body), var(--color-primario));
+        box-shadow: var(--sombra-2);
+        border-radius: 50px;
+        padding: 50px;
     }
 
     .project__grid-container div{
@@ -940,6 +975,10 @@ a, button, .project__grid-container div{
             transform: scale(.9);
 
         }
+    }
+
+    .project__grid-container div a{
+        text-decoration-line: none;
     }
 
     .project__grid-container div h4{
@@ -953,7 +992,6 @@ a, button, .project__grid-container div{
         height: 100%;
         width: 100%;
         /* ESTILOS */
-        /* background: linear-gradient(145deg, var(--color-cuaternario), var(--color-terciario));*/
         background-color: transparent;
         box-shadow: transparent;
         color: transparent;
@@ -970,6 +1008,7 @@ a, button, .project__grid-container div{
         background-image: url('../static/projects/blockchain prototype.jpg');
         background-size: cover;
         width: 100%; height: 100%;
+        border-top-left-radius: 15px;
     }
     .project__grid-img2{
         background-image: url('../static/projects/capicuas.jpg');
@@ -981,21 +1020,27 @@ a, button, .project__grid-container div{
         background-image: url('../static/projects/busquedas relacionadas1.jpg');
         background-size: cover;
         width: 100%; height: 100%;
+        border-top-right-radius: 15px;
     }
+
+    .project__grid-img3-1{
+        background-image: url('../static/projects/interest.png');
+        background-size: cover;
+        width: 100%; height: 100%;
+        border-bottom-left-radius: 15px;
+    }
+
     .project__grid-img4{
         background-image: url('../static/projects/contador_datos.jpg');
         background-size: cover;
         width: 100%; height: 100%;
     }
-    .project__grid-img5{
-        background-image: url('../static/projects/codificador.jpg');
-        background-size: cover;
-        width: 100%; height: 100%;
-    }
+
     .project__grid-img6{
         background-image: url('../static/projects/synthesio3.jpg');
         background-size: cover;
         width: 100%; height: 100%;
+        border-bottom-right-radius: 15px;
     }
     .project__grid-vid1{
         grid-column: 1 / 2;
@@ -1015,6 +1060,12 @@ a, button, .project__grid-container div{
         overflow: hidden;
     }
 
+    .project__grid-vid4{
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
     
 
 
